@@ -8,4 +8,9 @@ router.post(
     PostController.createPost
 )
 
+// get all posts
+// get single post
+// update post
+// delete post
+
 export const postRouter = router;
