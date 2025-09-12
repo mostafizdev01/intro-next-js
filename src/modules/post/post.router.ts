@@ -10,7 +10,7 @@ router.post(
 
 router.get("/", PostController.getAllPosts);
 router.get("/:id", PostController.getPostById);
-router.put("/:id", PostController.updatePost);
+router.patch("/:id", PostController.updatePost);
 router.delete("/:id", PostController.deletePost);
 
 export const postRouter = router;
