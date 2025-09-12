@@ -8,9 +8,9 @@ router.post(
     PostController.createPost
 )
 
-// get all posts
-// get single post
-// update post
-// delete post
+router.get("/", PostController.getAllPosts);
+router.get("/:id", PostController.getPostById);
+router.put("/:id", PostController.updatePost);
+router.delete("/:id", PostController.deletePost);
 
 export const postRouter = router;
