@@ -1,0 +1,11 @@
+
+
+export default function layout({children}: {children: React.ReactNode}) {
+  return (
+    <div>
+        <header>this is mainLayout header</header>
+      {children}
+      <footer>this is main layout footer</footer>
+    </div>
+  )
+}
