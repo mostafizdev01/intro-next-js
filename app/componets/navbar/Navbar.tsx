@@ -3,9 +3,12 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const pathName = usePathname();  // guch the path name
+    console.log(pathName)
 
     return (
         <nav className=" shadow-md w-full top-0 left-0 z-50">
@@ -18,11 +21,11 @@ export default function Navbar() {
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex space-x-6">
-                        <Link href="/" className="hover:text-blue-500">
-                            Home
+                        <Link href="/galary" className="hover:text-blue-500">
+                            Galary
                         </Link>
                         <Link href="/about" className="hover:text-blue-500">
-                            About
+                            Products
                         </Link>
                         <Link href="/blog" className="hover:text-blue-500">
                             Blog
